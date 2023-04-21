@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Chatbot Client</title>
+  <!-- Load Mantine UI styles -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@mantine/core/esm/styles.css"
+  >
+  <!-- Load custom styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="chatbot">
+    <div id="chatbot-header">
+      <h1>Chatbot Client</h1>
+      <button id="clear-chat">Clear Chat</button>
+    </div>
+    <div id="chatbot-messages"></div>
+    <div id="chatbot-input-container">
+      <input type="text" id="chatbot-input" placeholder="Type your message...">
+      <button id="chatbot-send">Send</button>
+    </div>
+  </div>
+  <!-- Load OpenAI API script -->
+  <script src="https://cdn.jsdelivr.net/npm/@openai/api@0.6.0"></script>
+  <!-- Load script.js -->
+  <script src="script.js"></script>
+</body>
+</html>
